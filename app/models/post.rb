@@ -1,4 +1,4 @@
 class Post < ActiveRecord::Base
-  validates :title, length: { maximum: 40 }
+  validates :content, length: { maximum: 255 }
   attr_accessible :content, :title
 end
